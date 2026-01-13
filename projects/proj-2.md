@@ -3,78 +3,87 @@ layout: post
 title: "POC RAG Puls-Events (Bordeaux Métropole)"
 ---
 
-## Résumé
-Proof-of-concept RAG (Retrieval-Augmented Generation) appliqué à des événements culturels/loisirs issus d’OpenAgenda (Bordeaux Métropole). Chaîne complète : ingestion API → nettoyage/pré-processing → embeddings + index FAISS → moteur RAG (recherche sémantique + filtres structurés) → UI Streamlit. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}
+<h2 style="text-align:center; margin-top: 0.2rem;">POC RAG Puls-Events</h2>
+<h3 style="text-align:center; margin-top: -0.6rem;">Bordeaux Métropole</h3>
 
-## Contexte & objectif
-Objectif pédagogique : démontrer un système RAG fonctionnel, reproductible, sans sur-optimisation ni industrialisation (POC). :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+### Résumé
 
-Périmètre :
-- Données : événements publics OpenAgenda via API Huwise/OpenDataSoft, filtrés Bordeaux Métropole.
-- Fenêtre temporelle POC : 01/10/2025 → 28/02/2026 (dans les scripts). :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+POC **RAG** (Retrieval-Augmented Generation) appliqué à des événements issus d’**OpenAgenda**.
 
-Non couvert (exemples) : réservation/billetterie, tarifs/accessibilité avancée, âge recommandé, adresse précise des lieux, robustesse sécurité prod. :contentReference[oaicite:8]{index=8}
+Chaîne complète : ingestion API, préparation, **embeddings**, index **FAISS**, retrieval, génération via **Mistral**, et UI **Streamlit**.
 
-## Solution livrée
-### Architecture (3 blocs)
-1. **Ingestion & pré-processing**
-   - Ingestion OpenAgenda (API), filtrage géo+temps, normalisation, création d’un texte `embedding_text`, catégorisation via règles. :contentReference[oaicite:9]{index=9} :contentReference[oaicite:10]{index=10}
-2. **Vectorisation & index FAISS**
-   - Chunking + embeddings (backend local SentenceTransformers), index FAISS `IndexFlatIP` (vecteurs normalisés L2). :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12}
-3. **Moteur RAG & UI**
-   - Parsing de question (communes, dates, catégories) + retrieval FAISS + génération via LLM Mistral + UI Streamlit (paramètres `k_context`, `temperature`, `top_p`, `max_tokens`). :contentReference[oaicite:13]{index=13} :contentReference[oaicite:14]{index=14}
+### Contexte & objectif
 
-[Illustration à ajouter : schéma pipeline (Bloc 1/2/3), ou capture du mermaid]
+Objectif : fournir des recommandations d’événements pertinentes et justifiables, avec réduction des hallucinations grâce au retrieval.
 
-## Outils & technologies
-- **Langage** : Python (structure `src/` + orchestrateurs à la racine). :contentReference[oaicite:15]{index=15}
-- **Données** : OpenAgenda (Huwise/OpenDataSoft), sorties JSONL/Parquet. :contentReference[oaicite:16]{index=16}
-- **Embeddings** : SentenceTransformers `all-MiniLM-L6-v2` (dimension 384) en local. :contentReference[oaicite:17]{index=17}
-- **Base vectorielle** : FAISS, index exact `IndexFlatIP` + normalisation L2. :contentReference[oaicite:18]{index=18}
-- **LLM** : API Mistral (génération de réponse). :contentReference[oaicite:19]{index=19} :contentReference[oaicite:20]{index=20}
-- **Interface** : Streamlit (`rag_ui.py`). :contentReference[oaicite:21]{index=21} :contentReference[oaicite:22]{index=22}
-- **Tests** : pytest (tests parsing NLU). :contentReference[oaicite:23]{index=23}
+Périmètre POC :
+- données : événements OpenAgenda (Bordeaux Métropole)
+- fenêtre : 01/10/2025 → 28/02/2026 (scripts)
 
-## Résultats & démonstration
-### Résultats quantitatifs (runs déc. 2025)
-- ~**1 568** événements bruts ingérés
-- ~**1 433** conservés après filtrage (Bordeaux Métropole + fenêtre)
-- **135** rejetés (hors périmètre)
-- **2 076 chunks** générés
-- **2 076 vecteurs** dans l’index FAISS (dim **384**) :contentReference[oaicite:24]{index=24}
+### Solution livrée
 
-### Démonstration (reproductible)
+#### Pipeline RAG
+
+- Ingestion et normalisation : API OpenAgenda, filtrage géo/temps, création d’un texte d’indexation
+- Vectorisation : embeddings **SentenceTransformers** (local)
+- Index : **FAISS** (`IndexFlatIP` + normalisation L2)
+- Moteur RAG : parsing de requêtes (lieu/date/catégorie), retrieval, génération **Mistral**
+- UI : **Streamlit** (paramètres de recherche et génération)
+
+[Illustration à ajouter : schéma pipeline RAG]
+
+### Stack
+
+- **Python**
+- **OpenAgenda API**
+- **SentenceTransformers**
+- **FAISS**
+- **Mistral API**
+- **Streamlit**
+- **pytest**
+
+### Démo
+
+#### Reproduire le POC
+
 - Pipeline :
   - `python ingestion_preprocessing.py`
   - `python vectorisation_index.py`
-  - `streamlit run rag_ui.py` :contentReference[oaicite:25]{index=25}
-- Tests parsing :
-  - `python -m pytest -v src/tests` :contentReference[oaicite:26]{index=26}
+  - `streamlit run rag_ui.py`
 
-[Illustration à ajouter : capture UI Streamlit + exemple de réponse]
+- Tests NLU :
+  - `python -m pytest -v src/tests`
 
-### Limites observées (POC)
-- Catégorisation basée sur règles (fallback “autre” possible).
-- Interprétation des dates complexe perfectible.
-- Couverture limitée à la fenêtre temporelle fixée. :contentReference[oaicite:27]{index=27}
+### Résultats & preuves
 
-## Compétences démontrées
-- Concevoir une architecture RAG complète (data → embeddings → index → retrieval → génération). :contentReference[oaicite:28]{index=28}
-- Mettre en place un pré-processing robuste (filtrage, normalisation, enrichissement, catégorisation). :contentReference[oaicite:29]{index=29}
-- Construire/contrôler un index FAISS (alignement métadonnées, cohérence dimensionnelle). :contentReference[oaicite:30]{index=30}
-- Implémenter un parsing NLU orienté “filtres structurés” + tests unitaires. :contentReference[oaicite:31]{index=31}
-- Exposer un POC via une UI Streamlit et paramétrer le comportement du RAG. :contentReference[oaicite:32]{index=32}
+Exemple de run (déc. 2025) :
+- 1 568 événements ingérés
+- 1 433 conservés après filtrage
+- 2 076 chunks
+- 2 076 vecteurs dans l’index FAISS (dimension 384)
 
-## Valeur ajoutée
-- Réponses en langage naturel **appuyées sur des événements sources** (réduction des hallucinations par retrieval + contexte).
-- Filtrage structuré (lieu/date/type) pour augmenter la pertinence.
-- POC rejouable : scripts d’orchestration séparés + configuration centralisée. :contentReference[oaicite:33]{index=33} :contentReference[oaicite:34]{index=34}
+[Illustration à ajouter : capture UI Streamlit + exemple question/réponse]
 
-## Liens
-- Repo GitHub : https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag
-- Brief OpenClassrooms : https://openclassrooms.com/fr/paths/1039/projects/1836
+### Compétences démontrées
 
-[Illustrations à ajouter]
-- Thumbnail projet (home)
-- Schéma pipeline (bloc 1/2/3)
-- Capture Streamlit (question + réponse + sources)
+- Concevoir une architecture **RAG** complète et reproductible
+- Mettre en place un pré-processing robuste (filtrage, normalisation)
+- Construire et valider un index **FAISS**
+- Implémenter du parsing NLU orienté **filtres structurés** + tests **pytest**
+- Exposer un POC via une UI **Streamlit** paramétrable
+
+### Valeur ajoutée
+
+- Recommandations basées sur des sources indexées, avec justification via contexte récupéré
+- Meilleure pertinence via filtrage structuré (lieu, date, type)
+- POC rejouable : scripts séparés et configuration simple
+
+### Liens
+
+Repo GitHub du projet : [p11_conception_deploiement_rag](https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag)
+
+Brief OpenClassrooms : [Projet OpenClassrooms](https://openclassrooms.com/fr/paths/1039/projects/1836)
+
+### Accès direct au repo
+
+{% include image.html url="https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag" image="projects/proj-2/thumbnail.jpg" %}
