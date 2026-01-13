@@ -1,11 +1,126 @@
 ---
 layout: post
-title: 'Gestion d'un projet d'infrastructure'
+title: "Gestion d'un projet d'infrastructure — Sport Data Solution"
 ---
-POC d’un pipeline data orchestré par Kestra : ingestion de données via Google Forms → Google Sheet, enrichissement (Google Maps), calcul des avantages, contrôles qualité (Soda), puis préparation de données pour consommation BI.
+
+## Résumé
+
+POC d’un pipeline data orchestré par Kestra.
+
+Le système ingère des déclarations d’activité (Google Forms → Google Sheet), enrichit les données (Google Maps), calcule des avantages, contrôle la qualité (Soda), puis prépare des vues pour Power BI.
+
+Le run est traçable, rejouable et notifie sur Slack.
+
+
+## Contexte & objectif
+
+Objectif : évaluer l’impact d’avantages liés à la pratique sportive.
+
+Le POC permet de tester des scénarios et de mesurer :
+- le coût estimé pour l’entreprise
+- la volumétrie d’éligibilité
+- l’évolution des KPI dans le temps
+
+Contraintes principales :
+- données RH à exposition minimale
+- automatisation et traçabilité
+- exécution au juste nécessaire
+
+
+## Solution livrée
+
+### Chaîne end-to-end
+
+- Orchestration : Kestra
+- Traitements : scripts Python ETL
+- Stockage : PostgreSQL avec séparation logique sec / metier / ops
+- Qualité : Soda sur tables puis sur vues BI
+- Restitution : Power BI sur vues préparées
+- Notifications : Slack pour messaging et alerting
+
+[Illustration à ajouter : schéma d’architecture]
+
+
+### Exécuter uniquement le nécessaire
+
+Le flow route l’exécution selon des signaux métier :
+- S : mode simulation
+- G : Google Sheet modifié
+- P : paramètres d’avantages modifiés
+
+Garde-fous techniques :
+- E : fichier Excel RH/Sport modifié
+- B : bootstrap RH requis
+
+[Illustration à ajouter : schéma d’orchestration]
+
+
+## Stack
+
+- Kestra
+- PostgreSQL
+- Python
+- Soda
+- Google Maps API
+- Power BI
+- Slack
+
+
+## Démo
+
+### Lancer l’infrastructure
+
+```bash
+docker compose up -d
+```
+
+Puis ouvrir Kestra : http://localhost:8080
+
+
+### Exécuter le pipeline
+
+Flow : p12.orchestration.pipeline_avantages_sportifs
+
+Cas d’usage :
+- Réel : soumettre un Google Forms, la ligne arrive dans le Sheet, elle est intégrée au run suivant
+- Simulation : SIMULATION=1 dans .env pour générer des déclaratifs fictifs
+
+
+## Résultats & preuves
+
+La solution produit :
+- des données normalisées et enrichies en base
+- des contrôles qualité automatisés
+- des vues BI prêtes à consommer
+- une historisation des KPI
+- des notifications Slack (succès, anomalies, erreurs)
+
+[Illustrations à ajouter : Soda, monitoring, KPI, Slack]
+
+
+## Compétences démontrées
+
+- Concevoir un pipeline data end-to-end
+- Orchestrer des traitements conditionnels
+- Industrialiser des contrôles qualité avec Soda
+- Structurer un modèle PostgreSQL orienté BI
+- Mettre en place monitoring, historisation et alerting
+- Intégrer des services externes par configuration
+
+
+## Valeur ajoutée
+
+- Scénarios rapides grâce à la simulation et aux paramètres
+- Fiabilité avant restitution BI
+- Pilotage fin des exécutions
+- Communication automatisée vers les parties prenantes
+
+
+## Liens
+
+Repo GitHub : https://github.com/patrick-arbessier-data/p12_sport_data_solution
+
+
+## Accès direct au repo
 
 {% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/thumbnail.jpg" %}
-
-{% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/dog.jpg" %}
-
-{% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/wall.jpg" %}
