@@ -37,6 +37,17 @@
       {{ content }}
       {% include footer.html %}
     </div>
+    <!-- Lightbox (global) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox__backdrop" data-lightbox-close></div>
+
+      <div class="lightbox__dialog" role="dialog" aria-modal="true">
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close">×</button>
+        <img class="lightbox__img" src="" alt="">
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ site.github.url }}/assets/js/lightbox.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+<div class="lb-image">
+  <a class="js-lightbox"
+     href="{{ site.github.url }}/assets/img/{{ include.image }}"
+     data-lightbox="1">
+    <img
+      src="{{ site.github.url }}/assets/img/{{ include.image }}"
+      alt="{{ include.alt | default: '' }}">
+  </a>
+
+  {% if include.caption %}
+    <p class="lb-caption">{{ include.caption }}</p>
+  {% endif %}
+</div>

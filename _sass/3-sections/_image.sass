@@ -29,3 +29,64 @@
     left: 50%
     transform: translate(-50%, -50%)
     -ms-transform: translate(-50%, -50%)
+
+// --- Lightbox (popup image) ---
+.lightbox
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9999
+
+  &.is-open
+    display: flex
+    align-items: center
+    justify-content: center
+
+.lightbox__backdrop
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0,0,0,0.85)
+
+.lightbox__dialog
+  position: relative
+  max-width: 92vw
+  max-height: 92vh
+  background: #000
+  padding: 12px
+  box-sizing: border-box
+
+.lightbox__img
+  display: block
+  max-width: 100%
+  max-height: 88vh
+  margin: 0 auto
+
+.lightbox__close
+  position: absolute
+  top: 6px
+  right: 10px
+  font-size: 28px
+  line-height: 1
+  background: transparent
+  border: 0
+  color: #fff
+  cursor: pointer
+
+// évite le scroll derrière la popup
+.lightbox-open
+  overflow: hidden
+
+.lb-image
+  margin: 18px 0
+
+.lb-caption
+  margin: 8px 0 0
+  font-size: 14px
+  opacity: 0.85
+  text-align: center
