@@ -94,5 +94,5 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 ### Contact
 
 - [GitHub](https://github.com/patrick-arbessier-data)
-- [LinkedIn'](https://www.linkedin.com/in/patrick-arbessier/)
-- [Email](mailto:portfoliog@anogen.eu)
+- [LinkedIn](https://www.linkedin.com/in/patrick-arbessier/)
+- [Email](mailto:portfolio@anogen.eu)
