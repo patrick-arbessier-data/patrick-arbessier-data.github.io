@@ -30,9 +30,9 @@ Le projet couvre :
 
 {% include image.html image="projects/proj-2/p11_bloc1_ingestion.jpg" alt="Ingestion" caption="Phase d'ingestion" %}
 
-{% include lightbox_image.html image="projects/proj-2/p11_bloc2_vectorisation.jpg" alt="phase embeddings & vectorisation" caption=="Phase d'embeddings & de vectorisation"%}
+{% include lightbox_image.html image="projects/proj-2/p11_bloc2_vectorisation.jpg" alt="phase embeddings & vectorisation" caption="Phase d'embeddings & de vectorisation"%}
 
-{% include lightbox_image.html image="projects/proj-2/p11_bloc2_rag_ui.jpg" alt="retrieval, LLM et UI" caption=="Phase de retrieval et d'affichage UI"%}
+{% include lightbox_image.html image="projects/proj-2/p11_bloc2_rag_ui.jpg" alt="retrieval, LLM et UI" caption="Phase de retrieval et affichage UI"%}
 
 
 - Ingestion : API OpenAgenda, filtrage géographique et temporel
@@ -53,7 +53,7 @@ Le projet couvre :
 
 ### Démo
 
-{% include lightbox_image.html image="projects/proj-2/p11_streamlit.jpg"  alt="affichage interface utilisateur" caption=="Exemple de réponses adaptées / pertinentes affichées pour l'utilisateur"%}
+{% include lightbox_image.html image="projects/proj-2/p11_streamlit.jpg"  alt="affichage interface utilisateur" caption="Exemple de réponses adaptées / pertinentes affichées pour l'utilisateur"%}
 
 #### Exécuter le POC
 
@@ -63,7 +63,7 @@ Le projet couvre :
 
 ### Résultats & preuves
 
-{% include lightbox_image.html image="projects/proj-2/p11_streamlit.jpg"  alt="affichage interface utilisateur" caption=="Exemple de réponses adaptées / pertinentes affichées pour l'utilisateur"%}
+{% include lightbox_image.html image="projects/proj-2/p11_streamlit.jpg"  alt="affichage interface utilisateur" caption="Exemple de réponses adaptées / pertinentes affichées pour l'utilisateur"%}
 
 - Index vectoriel cohérent et rejouable
 - Réponses appuyées sur des événements réels
