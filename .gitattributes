@@ -1,0 +1,10 @@
+# Normaliser les fins de ligne côté repo (LF), quel que soit l'OS
+* text=auto eol=lf
+
+# Fichiers où LF est souhaité
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
