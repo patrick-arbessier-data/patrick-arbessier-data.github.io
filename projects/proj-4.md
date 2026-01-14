@@ -7,7 +7,7 @@ title: "Modéliser une infrastructure hybride"
   <h3 class="project-subtitle">Streaming & Data Lake</h3>
 </div>
 
-### Résumé
+###v Résumé
 
 Conception d’une architecture **hybride on-premise / cloud** intégrant des flux **batch** et **temps réel**.
 
@@ -16,11 +16,13 @@ Le projet combine étude d’existant, modélisation cible et POC de streaming.
 ### Contexte & objectif
 
 Contexte :
+
 - SI on-premise existant (ERP, CRM, identités)
 - volumes de données importants
 - besoins temps réel et analytique
 
 Objectif :
+
 - intégrer une plateforme cloud sans rupture
 - sécuriser les identités et les flux
 - proposer une architecture scalable et maîtrisée

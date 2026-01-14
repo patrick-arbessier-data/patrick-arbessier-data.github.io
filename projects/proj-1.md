@@ -130,4 +130,4 @@ La solution produit :
 
 ## Accès au repo
 
-{% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/thumbnail.jpg" %}
+{% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/thumbnail.jpg" alt="Repo" text="Accéder au repo"%}

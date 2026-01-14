@@ -32,8 +32,7 @@ Le projet couvre :
 
 {% include lightbox_image.html image="projects/proj-2/p11_bloc2_vectorisation.jpg" alt="phase embeddings & vectorisation" caption="Phase d'embeddings & de vectorisation"%}
 
-{% include lightbox_image.html image="projects/proj-2/p11_bloc2_rag_ui.jpg" alt="retrieval, LLM et UI" caption="Phase de retrieval et affichage UI"%}
-
+{% include lightbox_image.html image="projects/proj-2/p11_bloc2_rag_ui.jpg" alt="retrieval, LLM et UI" caption="Phase de retrieval & affichage UI"%}
 
 - Ingestion : API OpenAgenda, filtrage géographique et temporel
 - Préparation : normalisation, enrichissement, création du texte d’indexation
@@ -84,4 +83,4 @@ Le projet couvre :
 
 ### Accès au repo
 
-{% include image.html url="https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag" image="projects/proj-2/thumbnail.jpg" %}
+{% include image.html url="https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag" image="projects/proj-2/thumbnail.jpg" alt="Repo" text="Accéder au repo"%}
