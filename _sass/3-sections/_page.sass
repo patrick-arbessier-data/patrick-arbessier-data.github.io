@@ -1,6 +1,15 @@
+// -----------------------------------------------------------------------------
+// Pages “classiques” (Profil, Contact, etc.)
+// Objectif : même largeur visuelle que les pages projets (.post-container)
+// -----------------------------------------------------------------------------
+
+
+// Conteneur principal des pages de contenu (layout: page.html)
 .page-content
-  width: 450px
-  margin: 30px
+  // Aligné sur .post-container (projets) : max 600px et centré
+  max-width: 600px
+  width: 100%
+  margin: 30px auto 30px
 
   // Texte de base
   p
@@ -14,13 +23,20 @@
     font:
       weight: 700
 
+
+// Responsive : on garde un rendu confortable sur mobile
 @media (max-width: 768px)
   .page-content
     width: 80vw
 
+
+// -----------------------------------------------------------------------------
 // Surcharges typographiques (pages de contenu + pages projets)
 // Scopées pour ne pas impacter les titres globaux du thème (home, etc.)
+// -----------------------------------------------------------------------------
+// NOTE : .project-load correspond au wrapper de contenu dans les pages projets.
 .page-content, .project-load
+
   h1
     font:
       size: 36px
@@ -40,7 +56,7 @@
       size: 20px
       weight: 700
     line-height: 1.35
-    // Neutralise le padding du thème sur h3
+    // Neutralise le padding du thème sur h3 (trop grand)
     padding: 0
     margin: 30px 0 10px
 
@@ -53,6 +69,6 @@
     padding: 0
     color: #555
 
-  // Évite un vide quand un titre est le premier élément du contenu
+  // Évite un “gros vide” quand un titre est le premier élément du contenu
   h1:first-child, h2:first-child, h3:first-child, h4:first-child
     margin-top: 0
