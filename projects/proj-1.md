@@ -99,6 +99,29 @@ La solution produit :
 - une historisation des KPI
 - des notifications Slack (succès, anomalies, erreurs)
 
+### Illustrations
+
+#### Schéma de l'orchestration
+
+{% include lightbox_image.html image="projects/proj-1/p12_schema_orchestration.jpg"  alt="Schéma d'orchestration" %}
+
+#### Stack
+
+{% include lightbox_image.html image="projects/proj-1/p12_stack.jpg"                 alt="Stack technique" %}
+
+#### Tests Soda
+
+{% include lightbox_image.html image="projects/proj-1/p12_tests_soda.png"            alt="Tests Soda" %}
+
+#### Notifications et alertes Slack
+
+{% include lightbox_image.html image="projects/proj-1/p12_alerting_slack.jpg"        alt="Alerting Slack" %}
+{% include lightbox_image.html image="projects/proj-1/p12_notif_slack.jpg"           alt="Notifications Slack" %}
+
+#### Exemple de rapport Power BI
+
+{% include lightbox_image.html image="projects/proj-1/p12_exemples_rapport_bi.jpg"   alt="Exemples rapport BI" %}
+
 [Illustrations à ajouter : Soda, monitoring, KPI, Slack]
 
 ## Compétences démontrées
