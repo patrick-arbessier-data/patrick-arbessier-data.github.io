@@ -4,7 +4,7 @@ title: Profil
 permalink: /profil/
 ---
 
-### Résumé
+## Résumé
 
 Data Engineer orienté **pipelines de données** de bout en bout : ingestion, transformation, **orchestration**, **qualité** et préparation pour la BI.  
 Je privilégie des solutions **simples, robustes et reproductibles**, avec des contrôles de qualité et des métriques d’exécution.
