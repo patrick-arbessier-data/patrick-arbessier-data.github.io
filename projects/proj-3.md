@@ -15,11 +15,13 @@ Le pipeline orchestre des flux de données hétérogènes afin de produire autom
 ### Contexte & objectif
 
 Contexte :
+
 - besoin mensuel de pilotage produit
 - trois sources en entrée (ERP, web, liaison)
 - réduction des manipulations manuelles
 
 Objectif :
+
 - concevoir et planifier l’ordonnancement de flux de données et de processus complets
 - automatiser une exécution mensuelle fiable
 

@@ -17,6 +17,7 @@ Chaîne complète : ingestion API, préparation des données, **embeddings**, in
 Objectif : fournir des recommandations d’événements pertinentes et explicables, en limitant les hallucinations grâce à l’appui sur des données sources indexées.
 
 Le projet couvre :
+
 - l’analyse de requêtes utilisateurs (lieu, date, type)
 - la recherche sémantique
 - la génération de réponses contextualisées
@@ -72,7 +73,7 @@ Le projet couvre :
 
 ### Liens
 
-Repo GitHub du projet : [p11_conception_deploiement_rag](https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag)
+Repo GitHub du projet : [Conception & déploiement d'un RAG événementiel](https://github.com/patrick-arbessier-data/p11_conception_deploiement_rag)
 
 ### Accès direct au repo
 
