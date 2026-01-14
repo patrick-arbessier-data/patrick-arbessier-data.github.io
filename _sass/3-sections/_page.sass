@@ -19,8 +19,8 @@
     width: 80vw
 
 // Surcharges typographiques (pages de contenu + pages projets)
-// (scopées pour éviter d’impacter les titres globaux du thème sur la home)
-.page-content, .project-load, .post-container
+// Scopées pour ne pas impacter les titres globaux du thème (home, etc.)
+.page-content, .project-load
   h1
     font:
       size: 36px
@@ -40,7 +40,7 @@
       size: 20px
       weight: 700
     line-height: 1.35
-    // Neutralise le padding énorme du thème sur h3
+    // Neutralise le padding du thème sur h3
     padding: 0
     margin: 30px 0 10px
 
@@ -53,18 +53,6 @@
     padding: 0
     color: #555
 
-  // Évite un “gros vide” quand un titre est le premier élément du contenu
+  // Évite un vide quand un titre est le premier élément du contenu
   h1:first-child, h2:first-child, h3:first-child, h4:first-child
     margin-top: 0
-
-// Pages projets : surcharger explicitement la règle du thème `.post-container h4`
-.post-container
-  .project-load
-    h4
-      font:
-        size: 18px
-        weight: 700
-      line-height: 1.35
-      margin: 16px 0 8px
-      padding: 0
-      color: #555

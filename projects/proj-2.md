@@ -16,7 +16,7 @@ Chaîne complète : ingestion API, préparation des données, **embeddings**, in
 
 ### Contexte & objectif
 
-Objectif : fournir des recommandations d’événements pertinentes et explicables, en limitant les hallucinations grâce à l’appui sur des données sources indexées.
+Objectif : fournir des recommandations d’événements pertinentes et explicables, en limitant les hallucinations en s'appuyant sur des données sources indexées et en ajoutant une granularité contextuelle.
 
 Le projet couvre :
 
