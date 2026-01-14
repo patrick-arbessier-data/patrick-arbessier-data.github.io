@@ -8,7 +8,7 @@ title: "POC RAG Bordeaux Métropole"
   <h3 class="project-subtitle">Puls-Events</h3>
 </div>
 
-### Résumé
+## Résumé
 
 POC **RAG** (Retrieval-Augmented Generation) appliqué à des événements culturels et de loisirs.
 

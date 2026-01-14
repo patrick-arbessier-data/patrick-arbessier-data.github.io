@@ -16,7 +16,7 @@ Le système ingère des déclarations d’activité (Google Forms → Google She
 
 Le run est traçable, rejouable et notifie sur Slack.
 
-## Contexte & objectif
+### Contexte & objectif
 
 Objectif : évaluer l’impact d’avantages liés à la pratique sportive.
 
@@ -43,8 +43,6 @@ Contraintes principales :
 - Restitution : Power BI sur vues préparées
 - Notifications : Slack pour messaging et alerting
 
-[Illustration à ajouter : schéma d’architecture]
-
 ### Exécuter uniquement le nécessaire
 
 Le flow route l’exécution selon des signaux métier :
@@ -58,9 +56,9 @@ Garde-fous techniques :
 - E : fichier Excel RH/Sport modifié
 - B : bootstrap RH requis
 
-[Illustration à ajouter : schéma d’orchestration]
+{% include lightbox_image.html image="projects/proj-1/p12_schema_orchestration.jpg"  alt="Schéma d'architecture" %}
 
-## Stack
+### Stack
 
 - Kestra
 - PostgreSQL
@@ -69,6 +67,8 @@ Garde-fous techniques :
 - Google Maps API
 - Power BI
 - Slack
+
+{% include lightbox_image.html image="projects/proj-1/p12_stack.jpg" alt="Stack technique" caption="Stack technique (Kestra, Postgres, Soda, Slack, Google Forms / Sheets / Maps, Power BI, Python, SQL, CSV, MS Excel)" %}
 
 ## Démo
 
@@ -89,7 +89,7 @@ Cas d’usage :
 - Réel : soumettre un Google Forms, la ligne arrive dans le Sheet, elle est intégrée au run suivant
 - Simulation : SIMULATION=1 dans .env pour générer des déclaratifs fictifs
 
-## Résultats & preuves
+### Résultats & preuves
 
 La solution produit :
 
@@ -99,30 +99,18 @@ La solution produit :
 - une historisation des KPI
 - des notifications Slack (succès, anomalies, erreurs)
 
-### Illustrations
-
-#### Schéma de l'orchestration
-
-{% include lightbox_image.html image="projects/proj-1/p12_schema_orchestration.jpg"  alt="Schéma d'orchestration" %}
-
-#### Stack
-
-{% include lightbox_image.html image="projects/proj-1/p12_stack.jpg"                 alt="Stack technique" %}
-
 #### Tests Soda
 
 {% include lightbox_image.html image="projects/proj-1/p12_tests_soda.png"            alt="Tests Soda" %}
 
 #### Notifications et alertes Slack
 
-{% include lightbox_image.html image="projects/proj-1/p12_alerting_slack.jpg"        alt="Alerting Slack" %}
 {% include lightbox_image.html image="projects/proj-1/p12_notif_slack.jpg"           alt="Notifications Slack" %}
+{% include lightbox_image.html image="projects/proj-1/p12_alerting_slack.jpg"        alt="Alerting Slack" %}
 
 #### Exemple de rapport Power BI
 
 {% include lightbox_image.html image="projects/proj-1/p12_exemples_rapport_bi.jpg"   alt="Exemples rapport BI" %}
-
-[Illustrations à ajouter : Soda, monitoring, KPI, Slack]
 
 ## Compétences démontrées
 
@@ -140,10 +128,6 @@ La solution produit :
 - Pilotage fin des exécutions
 - Communication automatisée vers les parties prenantes
 
-## Liens
-
-Repo GitHub : https://github.com/patrick-arbessier-data/p12_sport_data_solution
-
-## Accès direct au repo
+## Accès au repo
 
 {% include image.html url="https://github.com/patrick-arbessier-data/p12_sport_data_solution" image="projects/proj-1/thumbnail.jpg" %}
