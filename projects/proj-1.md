@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Gestion d'un projet d'infrastructure — Sport Data Solution"
+title: "Gérer un projet d'infrastructure"
 ---
 
-<h2 style="text-align:center; margin-top: 0.2rem;">Gestion d'un projet d'infrastructure</h2>
-
-<h3 style="text-align:center; margin-top: -0.6rem;">Sport Data Solution</h3>
+<div class="project-header">
+  <h2 class="project-title">Gestion d'un projet d'infrastructure<</h2>
+  <h3 class="project-subtitle">Sport Data Solution</h3>
+</div>
 
 ## Résumé
 
