@@ -16,7 +16,7 @@ Chaîne complète : ingestion API, préparation des données, **embeddings**, in
 
 ### Contexte & objectif
 
-Objectif : fournir des recommandations d’événements pertinentes et explicables, en limitant les hallucinations en s'appuyant sur des données sources indexées et en ajoutant une granularité contextuelle.
+Objectif : fournir des recommandations d’événements pertinentes et explicables, en limitant les hallucinations grâce aux données sources indexées complétées par une granularité contextuelle.
 
 Le projet couvre :
 
@@ -28,7 +28,7 @@ Le projet couvre :
 
 #### Pipeline RAG
 
-{% include image.html image="projects/proj-2/p11_bloc1_ingestion.jpg" alt="Ingestion" caption="Phase d'ingestion" %}
+{% include lightbox_image.html image="projects/proj-2/p11_bloc1_ingestion.jpg" alt="Ingestion" caption="Phase d'ingestion" %}
 
 {% include lightbox_image.html image="projects/proj-2/p11_bloc2_vectorisation.jpg" alt="phase embeddings & vectorisation" caption="Phase d'embeddings & de vectorisation"%}
 
@@ -52,8 +52,6 @@ Le projet couvre :
 - **pytest**
 
 ### Démo
-
-{% include lightbox_image.html image="projects/proj-2/p11_streamlit.jpg"  alt="affichage interface utilisateur" caption="Exemple de réponses adaptées / pertinentes affichées pour l'utilisateur"%}
 
 #### Exécuter le POC
 
