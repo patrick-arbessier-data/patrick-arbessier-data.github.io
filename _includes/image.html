@@ -1,10 +1,18 @@
 <div class="image-container">
-  <a href="{{ include.url }}" target="_blank">
-    <img src="{{ site.github.url }}/assets/img/{{ include.image }}" alt="{{ include.alt }}" class="image">
+  <a href="{{ include.url }}" target="_blank" rel="noopener">
+    <!-- Image -->
+    <img
+      src="{{ site.github.url }}/assets/img/{{ include.image }}"
+      alt="{{ include.alt | default: '' }}"
+      class="image"
+    >
 
+    <!-- Overlay : uniquement si un texte est fourni -->
     {% if include.text %}
-      <div class="image-overlay">
-        <p><strong>{{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong></p>
+      <div class="overlay">
+        <div class="text">
+          {{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
       </div>
     {% endif %}
   </a>
