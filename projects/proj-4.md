@@ -2,9 +2,10 @@
 layout: post
 title: "Modéliser une infrastructure hybride"
 ---
-
-<h2 style="text-align:center; margin-top: 0.2rem;">Modéliser une infrastructure hybride</h2>
-<h3 style="text-align:center; margin-top: -0.6rem;">Streaming & Data Lake</h3>
+<div class="project-header">
+  <h2 class="project-title">Modéliser une infrastructure hybride</h2>
+  <h3 class="project-subtitle">Streaming & Data Lake</h3>
+</div>
 
 ### Résumé
 

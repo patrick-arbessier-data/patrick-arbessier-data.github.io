@@ -3,8 +3,10 @@ layout: post
 title: "POC RAG Puls-Events"
 ---
 
-<h2 style="text-align:center; margin-top: 0.2rem;">POC RAG Puls-Events</h2>
-<h3 style="text-align:center; margin-top: -0.6rem;">Bordeaux Métropole</h3>
+<div class="project-header">
+  <h2 class="project-title">POC RAG Evénements<br />Bordeaux Métropole</h2>
+  <h3 class="project-subtitle">Puls-Events</h3>
+</div>
 
 ### Résumé
 

@@ -4,7 +4,7 @@ title: "Gérer un projet d'infrastructure"
 ---
 
 <div class="project-header">
-  <h2 class="project-title">Gestion d'un projet d'infrastructure<</h2>
+  <h2 class="project-title">Gestion d'un projet d'infrastructure</h2>
   <h3 class="project-subtitle">Sport Data Solution</h3>
 </div>
 

@@ -3,8 +3,10 @@ layout: post
 title: "Orchestrer un pipeline de flux"
 ---
 
-<h2 style="text-align:center; margin-top: 0.2rem;">Orchestrer un pipeline de flux</h2>
-<h3 style="text-align:center; margin-top: -0.6rem;">BottleNeck</h3>
+<div class="project-header">
+  <h2 class="project-title">Orchestrer un pipeline de flux</h2>
+  <h3 class="project-subtitle">BottleNeck</h3>
+</div>
 
 ### Résumé
 
