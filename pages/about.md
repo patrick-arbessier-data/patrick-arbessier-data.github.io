@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Profil
-permalink: /aprofil
+permalink: /profil
 ---
 
 # Portfolio Jekyll Theme
