@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "POC RAG Puls-Events"
+title: "POC RAG Bordeaux Métropole"
 ---
 
 <div class="project-header">
