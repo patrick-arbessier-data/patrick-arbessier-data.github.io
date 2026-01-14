@@ -28,6 +28,13 @@ Le projet couvre :
 
 #### Pipeline RAG
 
+{% include lightbox_image.html image="projects/proj-2/p11_bloc1_ingestion.jpg"  alt="ingestion caption=="Phase d'ingestion" %}
+
+{% include lightbox_image.html image="projects/proj-2/p11_bloc2_ vectorisation.jpg"  alt="phase embeddings & vectorisation caption=="Phase d'embeddings & de vectorisation"%}
+
+{% include lightbox_image.html image="projects/proj-2/p11_bloc2_ rag_ui.jpg"  alt="retrieval, LLM et UI caption=="Phase de retrieval et d'affichage UI"%}
+
+
 - Ingestion : API OpenAgenda, filtrage géographique et temporel
 - Préparation : normalisation, enrichissement, création du texte d’indexation
 - Vectorisation : **SentenceTransformers**
