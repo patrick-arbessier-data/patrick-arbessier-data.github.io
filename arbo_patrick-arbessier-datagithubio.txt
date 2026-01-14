@@ -1,0 +1,180 @@
+# 🌳 Arborescence de patrick-arbessier-data.github.io
+# 📊 Statistiques:
+#   - 26 dossiers
+#   - 144 fichiers
+#   - 1 dossiers exclus (avec sous-dossiers)
+#   - Total affiché: 171 lignes
+# 📋 Note: Les dossiers LOGS sont conservés
+# ⚠️  Exclusions récursives: dossier parent exclu = sous-dossiers exclus
+
+📁 patrick-arbessier-data.github.io/
+├── 📁 _data/
+│   └── ⚙️ settings.yml
+├── 📁 _includes/
+│   ├── 🌐 analytics.html
+│   ├── 🌐 disqus.html
+│   ├── 🌐 footer.html
+│   ├── 🌐 header.html
+│   ├── 🌐 image.html
+│   └── 🌐 projects.html
+├── 📁 _layouts/
+│   ├── 🌐 blog.html
+│   ├── 🌐 default.html
+│   ├── 🌐 home.html
+│   ├── 🌐 page.html
+│   └── 🌐 post.html
+├── 📁 _posts/
+│   ├── 📝 2013-01-01-more-jekyll-themes.md
+│   ├── 📝 2014-01-01-text-formatting-examples.md
+│   └── 📝 2017-01-01-getting-started.md
+├── 📁 _sass/
+│   ├── 📁 1-tools/
+│   │   ├── 📁 animations/
+│   │   │   ├── 📄 _animations-dir.sass
+│   │   │   ├── 📄 _bottomDoor.sass
+│   │   │   ├── 📄 _bottomUp.sass
+│   │   │   ├── 📄 _bounceOut.scss
+│   │   │   ├── 📄 _fadeIn.sass
+│   │   │   ├── 📄 _leftRight.sass
+│   │   │   ├── 📄 _none.sass
+│   │   │   ├── 📄 _rightLeft.sass
+│   │   │   ├── 📄 _textSlide.sass
+│   │   │   ├── 📄 _topDoor.sass
+│   │   │   └── 📄 _topDown.sass
+│   │   ├── 📁 bourbon/
+│   │   │   ├── 📁 addons/
+│   │   │   │   ├── 📄 _button.scss
+│   │   │   │   ├── 📄 _clearfix.scss
+│   │   │   │   ├── 📄 _directional-values.scss
+│   │   │   │   ├── 📄 _ellipsis.scss
+│   │   │   │   ├── 📄 _font-family.scss
+│   │   │   │   ├── 📄 _hide-text.scss
+│   │   │   │   ├── 📄 _html5-input-types.scss
+│   │   │   │   ├── 📄 _position.scss
+│   │   │   │   ├── 📄 _prefixer.scss
+│   │   │   │   ├── 📄 _retina-image.scss
+│   │   │   │   ├── 📄 _size.scss
+│   │   │   │   ├── 📄 _timing-functions.scss
+│   │   │   │   ├── 📄 _triangle.scss
+│   │   │   │   └── 📄 _word-wrap.scss
+│   │   │   ├── 📁 css3/
+│   │   │   │   ├── 📄 _animation.scss
+│   │   │   │   ├── 📄 _appearance.scss
+│   │   │   │   ├── 📄 _backface-visibility.scss
+│   │   │   │   ├── 📄 _background-image.scss
+│   │   │   │   ├── 📄 _background.scss
+│   │   │   │   ├── 📄 _border-image.scss
+│   │   │   │   ├── 📄 _border-radius.scss
+│   │   │   │   ├── 📄 _box-sizing.scss
+│   │   │   │   ├── 📄 _calc.scss
+│   │   │   │   ├── 📄 _columns.scss
+│   │   │   │   ├── 📄 _filter.scss
+│   │   │   │   ├── 📄 _flex-box.scss
+│   │   │   │   ├── 📄 _font-face.scss
+│   │   │   │   ├── 📄 _font-feature-settings.scss
+│   │   │   │   ├── 📄 _hidpi-media-query.scss
+│   │   │   │   ├── 📄 _hyphens.scss
+│   │   │   │   ├── 📄 _image-rendering.scss
+│   │   │   │   ├── 📄 _keyframes.scss
+│   │   │   │   ├── 📄 _linear-gradient.scss
+│   │   │   │   ├── 📄 _perspective.scss
+│   │   │   │   ├── 📄 _placeholder.scss
+│   │   │   │   ├── 📄 _radial-gradient.scss
+│   │   │   │   ├── 📄 _transform.scss
+│   │   │   │   ├── 📄 _transition.scss
+│   │   │   │   └── 📄 _user-select.scss
+│   │   │   ├── 📁 functions/
+│   │   │   │   ├── 📄 _assign.scss
+│   │   │   │   ├── 📄 _color-lightness.scss
+│   │   │   │   ├── 📄 _flex-grid.scss
+│   │   │   │   ├── 📄 _golden-ratio.scss
+│   │   │   │   ├── 📄 _grid-width.scss
+│   │   │   │   ├── 📄 _modular-scale.scss
+│   │   │   │   ├── 📄 _px-to-em.scss
+│   │   │   │   ├── 📄 _px-to-rem.scss
+│   │   │   │   ├── 📄 _strip-units.scss
+│   │   │   │   ├── 📄 _tint-shade.scss
+│   │   │   │   ├── 📄 _transition-property-name.scss
+│   │   │   │   └── 📄 _unpack.scss
+│   │   │   ├── 📁 helpers/
+│   │   │   │   ├── 📄 _convert-units.scss
+│   │   │   │   ├── 📄 _gradient-positions-parser.scss
+│   │   │   │   ├── 📄 _is-num.scss
+│   │   │   │   ├── 📄 _linear-angle-parser.scss
+│   │   │   │   ├── 📄 _linear-gradient-parser.scss
+│   │   │   │   ├── 📄 _linear-positions-parser.scss
+│   │   │   │   ├── 📄 _linear-side-corner-parser.scss
+│   │   │   │   ├── 📄 _radial-arg-parser.scss
+│   │   │   │   ├── 📄 _radial-gradient-parser.scss
+│   │   │   │   ├── 📄 _radial-positions-parser.scss
+│   │   │   │   ├── 📄 _render-gradients.scss
+│   │   │   │   ├── 📄 _shape-size-stripper.scss
+│   │   │   │   └── 📄 _str-to-num.scss
+│   │   │   ├── 📁 settings/
+│   │   │   │   ├── 📄 _prefixer.scss
+│   │   │   │   └── 📄 _px-to-em.scss
+│   │   │   ├── 📄 _bourbon-deprecated-upcoming.scss
+│   │   │   └── 📄 _bourbon.scss
+│   │   ├── 📄 _-tools-dir.sass
+│   │   ├── 📄 _fonts.scss
+│   │   ├── 📄 _icon-font.scss
+│   │   ├── 📄 _normalize.scss
+│   │   └── 📄 _spinner.scss
+│   ├── 📁 2-base/
+│   │   ├── 📄 _-base-dir.sass
+│   │   ├── 📄 _base.sass
+│   │   └── 📄 _placeholders.sass
+│   └── 📁 3-sections/
+│       ├── 📄 _-sections-dir.sass
+│       ├── 📄 _blog.sass
+│       ├── 📄 _default.sass
+│       ├── 📄 _footer.sass
+│       ├── 📄 _header.sass
+│       ├── 📄 _image.sass
+│       ├── 📄 _page.sass
+│       ├── 📄 _post.sass
+│       └── 📄 _projects.sass
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── 📄 all.sass
+│   └── 📁 img/
+│       └── 📁 projects/
+│           ├── 📁 proj-1/
+│           │   ├── 📄 p12_alerting_slack.jpg
+│           │   ├── 📄 p12_exemples_rapport_bi.jpg
+│           │   ├── 📄 p12_notif_slack.jpg
+│           │   ├── 📄 p12_stack.jpg
+│           │   ├── 📄 p12_tests_soda.png
+│           │   ├── 📄 p1_schema_orchestration.jpg
+│           │   └── 📄 thumbnail.jpg
+│           ├── 📁 proj-2/
+│           │   ├── 📄 stretch.jpg
+│           │   └── 📄 thumbnail.jpg
+│           ├── 📁 proj-3/
+│           │   ├── 📄 clothes.jpg
+│           │   └── 📄 thumbnail.jpg
+│           ├── 📁 proj-4/
+│           │   ├── 📄 bike.jpg
+│           │   └── 📄 thumbnail.jpg
+│           └── 📁 proj-5/
+│               ├── 📄 gun-pants.jpg
+│               └── 📄 thumbnail.jpg
+├── 📁 pages/
+│   ├── 📝 about.md
+│   ├── 📝 blog.md
+│   └── 📝 contact.md
+├── 📁 projects/
+│   ├── 📝 proj-1.md
+│   ├── 📝 proj-2.md
+│   ├── 📝 proj-3.md
+│   ├── 📝 proj-4.md
+│   └── 📝 proj-5.md
+├── 📄 .gitattributes
+├── 📄 .gitignore
+├── ⚙️ _config.yml
+├── 📄 favicon.ico
+├── 📄 Gemfile
+├── 📝 index.md
+├── 📝 LICENSE.md
+├── 📄 portfolio-jekyll-theme.gemspec
+└── 📝 README.md

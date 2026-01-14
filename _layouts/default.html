@@ -11,10 +11,11 @@
     <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
     <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
     <title>
+      {% assign tab_title = site.browser_title | default: site.title %}
       {% if page.title == "Home" %}
-        {{ site.title }}
+        {{ tab_title }}
       {% else %}
-        {{ page.title }} | {{ site.title }}
+        {{ page.title }} | {{ tab_title }}
       {% endif %}
     </title>
     <link rel="stylesheet" href="{{ site.github.url }}/assets/css/all.css">
