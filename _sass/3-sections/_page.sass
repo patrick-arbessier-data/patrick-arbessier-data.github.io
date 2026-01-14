@@ -2,13 +2,13 @@
   width: 450px
   margin: 30px
 
-  // Base text
+  // Texte de base
   p
     line-height: 1.5
     font:
       size: 16px
 
-  // Keep headings bold/black by default on content pages
+  // Titres : garder gras/noir par défaut sur les pages de contenu
   h1
     color: black
     font:
@@ -18,8 +18,8 @@
   .page-content
     width: 80vw
 
-// Typography overrides for content pages + project pages
-// (scoped to avoid impacting global theme headings on the home page)
+// Surcharges typographiques (pages de contenu + pages projets)
+// (scopées pour éviter d’impacter les titres globaux du thème sur la home)
 .page-content, .project-load, .post-container
   h1
     font:
@@ -40,6 +40,7 @@
       size: 20px
       weight: 700
     line-height: 1.35
+    // Neutralise le padding énorme du thème sur h3
     padding: 0
     margin: 30px 0 10px
 
@@ -52,5 +53,18 @@
     padding: 0
     color: #555
 
+  // Évite un “gros vide” quand un titre est le premier élément du contenu
   h1:first-child, h2:first-child, h3:first-child, h4:first-child
     margin-top: 0
+
+// Pages projets : surcharger explicitement la règle du thème `.post-container h4`
+.post-container
+  .project-load
+    h4
+      font:
+        size: 18px
+        weight: 700
+      line-height: 1.35
+      margin: 16px 0 8px
+      padding: 0
+      color: #555
