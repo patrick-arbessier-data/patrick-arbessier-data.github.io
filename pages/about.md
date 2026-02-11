@@ -68,9 +68,13 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 
 ### Méthode de travail
 
-- Je cherche le **plus simple** qui tient la route : peu de dépendances, comportement explicite, documentation courte.
-- Je sécurise la production : **contrôles qualité**, logs, métriques et comportements de reprise (retries / relance).
-- Je garde les livrables exploitables : dépôt Git propre, scripts reproductibles, et pages projet documentées.
+- Analyse et réflexion
+- Conception de l'architecture puis modélisation
+- Implémentation, de préférence modulaire et conteneurisée
+- Tests unitaires à la fin de chaque sprint
+- Orchestration et intégration
+- Sécurisation de la production (contrôles qualité, logs, métriques et comportements de reprise)
+- Reprise de la documentation, dépôt Git
 
 ---
 

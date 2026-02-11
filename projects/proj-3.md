@@ -45,6 +45,8 @@ Objectif :
 - validation systématique des volumes et indicateurs
 - échec du run en cas d’écart significatif
 
+{% include lightbox_image.html image="projects/proj-3/p10_diagramme_flux_taches_bottleneck.png"  alt="diagramme_pipeline_complet" caption="Diagramme de flux complet"%}
+
 ### Stack
 
 - **Kestra**
@@ -53,11 +55,21 @@ Objectif :
 - **SQL**
 - **Docker**
 
+{% include lightbox_image.html image="projects/proj-3/p10_stack.png" alt="Stack technique" caption="Stack technique (Kestra, DuckDB, Python, SQL, CSV, MS Excel)"%}
+
 ### Résultats & preuves
 
 - Pipeline automatisé et planifié
+
+{% include lightbox_image.html image="projects/proj-3/p10_orchestration_complete_kestra.jpg" alt="Orchestration complète avec planification" caption="Orchestration complète avec planification"%}
+
 - Données contrôlées à chaque étape
+
+{% include lightbox_image.html image="projects/proj-3/p10_conformite_tests.jpg" alt="Conformité attendus / tests" caption="Conformité attendus / tests"%}
+
 - Résultats reproductibles et traçables
+
+{% include lightbox_image.html image="projects/proj-3/p10_gantt enrichi.jpg" alt="Gantt d'exécution" caption="Gantt d'exécution"%}
 
 ### Compétences démontrées
 
@@ -73,10 +85,10 @@ Objectif :
 - Réduction des erreurs humaines
 - Lecture claire des dépendances et des flux
 
-### Liens
+### Accès au repo
 
 Repo GitHub du projet : à venir
 
 ### Illustration
 
-{% include image.html image="projects/proj-3/thumbnail.jpg" %}
+{% include image.html image="projects/proj-3/p10_stack.png" %}

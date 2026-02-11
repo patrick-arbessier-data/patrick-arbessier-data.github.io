@@ -7,9 +7,9 @@ title: "Modéliser une infrastructure hybride"
   <h3 class="project-subtitle">Streaming & Data Lake</h3>
 </div>
 
-###v Résumé
+### Résumé
 
-Conception d’une architecture **hybride on-premise / cloud** intégrant des flux **batch** et **temps réel**.
+Conception d’une architecture **hybride on-premise / cloud** intégrant des flux **batch** et **temps réel** pour gérer des tockets clients avec Redpanda et PySpark.
 
 Le projet combine étude d’existant, modélisation cible et POC de streaming.
 
@@ -30,6 +30,8 @@ Objectif :
 ### Solution livrée
 
 #### Architecture hybride
+
+{% include lightbox_image.html image="projects/proj-4/p09_schema_infra_hybride.png"  alt="schéma d'infrastructure on-premise / cloud" caption="Schéma de l'infrastructure hybride - Provider cloud AWS"%}
 
 - on-premise conservé comme référentiel
 - ingestion temps réel via streaming
