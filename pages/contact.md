@@ -6,6 +6,10 @@ permalink: /contact
 
 # Contact
 
-Vous pouvez me contacter [par mail](mailto:portfolio@anogen.eu) pour toute question ou pour accéder aux repos.
+<p>
+Vous pouvez me contacter <a href="https://github.com/patrick-arbessier-data" target="_blank" rel="noopener noreferrer">par mail</a> pour toute question ou pour accéder aux repos.
+</p>
 
-You may contact me [through my email](mailto:portfolio@anogen.eu) if you have any questions or would like to bring up any issues.
+<p>
+You may contact me <a href="https://github.com/patrick-arbessier-data" target="_blank" rel="noopener noreferrer">through my email</a> if you have any questions or would like to bring up any issues.
+</p>
