@@ -37,35 +37,6 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 
 ---
 
-### Réalisations sélectionnées
-
-> Objectif : 3 à 5 réalisations maximum, chacune en 6–8 lignes, orientées “problème → solution → résultat”.
-
-#### Projet 1 — [Titre projet]
-
-- **Problème** : [A compléter]
-- **Solution** : [A compléter]
-- **Stack** : **Python**, **Kestra**, **PostgreSQL**, **Soda**, **Slack**, Power BI
-- **Résultat** : [livrables : pipeline opérationnel, contrôles, alerting, vues BI, etc.]
-
-#### Projet 2 — [Titre projet]
-
-- **Problème** : …
-- **Solution** : …
-- **Stack** : …
-- **Résultat** : …
-
-#### Projet 3 — [Titre projet]
-
-- **Problème** : …
-- **Solution** : …
-- **Stack** : …
-- **Résultat** : …
-
-[A compléter]
-
----
-
 ### Méthode de travail
 
 - Analyse et réflexion
