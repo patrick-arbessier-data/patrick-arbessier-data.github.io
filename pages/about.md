@@ -68,6 +68,8 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 
 ### Contact
 
-- [GitHub](https://github.com/patrick-arbessier-data)
-- [LinkedIn](https://www.linkedin.com/in/patrick-arbessier/)
-- [Email](mailto:portfolio@anogen.eu)
+<ul>
+  <li><a href="https://github.com/patrick-arbessier-data" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/patrick-arbessier/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+  <li><a href="mailto:portfolio@anogen.eu" target="_blank" rel="noopener noreferrer">Email</a></li>
+</ul>
