@@ -59,7 +59,7 @@ La solution est structurée en deux livrables complémentaires :
 
 {% include lightbox_image.html image="projects/proj-4/P09_01_creation_topic_client_tickets.jpg"  alt="creation du topic"%}
 
-##### Rsultats du Producer
+##### Résultat du Producer
 
 {% include lightbox_image.html image="projects/proj-4/P09_03_producer_envoi_tickets_fin.jpg"  alt="Production des tickets" caption="Production de 100 tickets"%}
 
