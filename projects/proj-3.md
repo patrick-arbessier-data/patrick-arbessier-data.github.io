@@ -87,8 +87,4 @@ Objectif :
 
 ### Accès au repo
 
-Repo GitHub du projet : à venir
-
-### Illustration
-
-{% include image.html image="projects/proj-3/p10_stack.png" %}
+Repo GitHub du projet : en cours de finalisation
