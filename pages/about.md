@@ -6,12 +6,14 @@ permalink: /profil/
 
 ## Résumé
 
-Data Engineer orienté **pipelines de données** de bout en bout : ingestion, transformation, **orchestration**, **qualité** et préparation pour la BI.  
-Je privilégie des solutions **simples, robustes et reproductibles**, avec des contrôles de qualité et des métriques d’exécution.
+Data Engineer orienté **pipelines de données** de bout en bout :
+
+- ingestion, transformation, **orchestration**, **qualité** et préparation pour la BI.
+- solutions **simples, robustes et reproductibles**, avec contrôles de qualité et métriques d’exécution.
 
 ---
 
-### Compétences clés
+### Quelques compétences
 
 #### Data engineering
 
@@ -31,9 +33,16 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 
 #### Stack technique
 
-- **Python**, **SQL**, PostgreSQL
-- Docker, Git, GitHub
-- Power BI (préparation des données, modèles de consommation)
+- Windows 11, VS Code, WSL
+- Docker Desktop, Git/GitHub
+- Python, SQL
+- Kestra, Kafka, Redpanda, PySpark, API
+- SentenceTransformers, FAISS
+- Pytest, Soda
+- PostgreSQL, SQLite, MySQL, MongoDB, DuckDB
+- AWS
+- Streamlit
+- Power BI
 
 ---
 
@@ -49,20 +58,9 @@ Je privilégie des solutions **simples, robustes et reproductibles**, avec des c
 
 ---
 
-### Outils & environnement
-
-- Windows 11, VS Code, WSL
-- Docker Desktop, Git/GitHub
-- Python, PostgreSQL, MongoDB
-- Power BI
-
----
-
 ### Formation
 
 - Data Engineer (OpenClassrooms) — projets de conception, orchestration, qualité et valorisation des données
-
-[A compléter]
 
 ---
 

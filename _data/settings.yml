@@ -21,7 +21,7 @@ projects:
 # Contact Section
 
 social:
-- {icon: 'github',    link: 'https://github.com/patrick-arbessier-data'}
+# - {icon: 'github',    link: 'https://github.com/patrick-arbessier-data'}
 - {icon: 'linkedin',  link: 'https://www.linkedin.com/in/patrick-arbessier/'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
