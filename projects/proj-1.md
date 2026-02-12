@@ -101,16 +101,16 @@ La solution produit :
 
 #### Tests Soda
 
-{% include lightbox_image.html image="projects/proj-1/p12_tests_soda.png"            alt="Tests Soda" %}
+{% include lightbox_image.html image="projects/proj-1/p12_tests_soda.png" alt="Tests Soda" %}
 
 #### Notifications et alertes Slack
 
-{% include lightbox_image.html image="projects/proj-1/p12_notif_slack.jpg"           alt="Notifications Slack" %}
-{% include lightbox_image.html image="projects/proj-1/p12_alerting_slack.jpg"        alt="Alerting Slack" %}
+{% include lightbox_image.html image="projects/proj-1/p12_notif_slack.jpg" alt="Notifications Slack" %}
+{% include lightbox_image.html image="projects/proj-1/p12_alerting_slack.jpg" alt="Alerting Slack" %}
 
 #### Exemple de rapport Power BI
 
-{% include lightbox_image.html image="projects/proj-1/p12_exemples_rapport_bi.jpg"   alt="Exemples rapport BI" %}
+{% include lightbox_image.html image="projects/proj-1/p12_exemples_rapport_bi.jpg" alt="Exemples rapport BI" %}
 
 ## Compétences démontrées
 
