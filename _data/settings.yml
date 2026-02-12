@@ -15,7 +15,7 @@ projects:
 - {name: "POC RAG Puls-Events (Bordeaux Métropole)", url: 'proj-2'}
 - {name: 'Orchestrer un pipeline de flux', url: 'proj-3'}
 - {name: 'Modéliser une infrastructure hybride',  url: 'proj-4'}
-- {name: 'Project Five',  url: 'proj-5'}
+# - {name: 'Project Five',  url: 'proj-5'}
 
 #-------------------------------
 # Contact Section
