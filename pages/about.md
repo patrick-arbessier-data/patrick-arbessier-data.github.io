@@ -4,69 +4,36 @@ title: Profil
 permalink: /profil/
 ---
 
-## Résumé
+## TL;DR
 
-Data Engineer orienté **pipelines de données** de bout en bout :
+Data Engineer orienté pipelines : ingestion → transformation → orchestration → contrôles qualité → exposition (BI/indicateurs).
 
-- ingestion, transformation, **orchestration**, **qualité** et préparation pour la BI.
-- solutions **simples, robustes et reproductibles**, avec contrôles de qualité et métriques d’exécution.
+Objectif : automatiser des workflows récurrents avec fiabilité, mesures d’exécution et détection d’anomalies.
 
----
+Formation OpenClassrooms (niveau 7 RNCP) : 13 projets validés, dont certains détaillés dans ce portfolio.
 
-### Quelques compétences
-
-#### Data engineering
-
-- Conception de pipelines : ingestion, transformation, enrichissement, préparation BI
-- Modélisation et SQL : schémas, vues, agrégations, cohérence métier
-- Bonnes pratiques : **idempotence**, déduplication, historisation, traçabilité des traitements
-
-#### Orchestration
-
-- Orchestration de flux avec **Kestra** : triggers, tâches, enchaînements, retries, conditions
-- Automatisation orientée production : exécutions planifiées, relances, surveillance minimale
-
-#### Qualité & observabilité
-
-- Contrôles qualité avec **Soda** : complétude, validité, contrôles métier
-- Journalisation et métriques : logs structurés, indicateurs d’exécution, alerting
-
-#### Stack technique
-
-- Windows 11, VS Code, WSL
-- Docker Desktop, Git/GitHub
-- Python, SQL
-- Kestra, Kafka, Redpanda, PySpark, API
-- SentenceTransformers, FAISS
-- Pytest, Soda
-- PostgreSQL, SQLite, MySQL, MongoDB, DuckDB
-- AWS
-- Streamlit
-- Power BI
+Intervention : intégré à une équipe projet ou en solo ; salarié ou consultant selon le contexte.
 
 ---
 
-### Méthode de travail
+## Présentation
 
-- Analyse et réflexion
-- Conception de l'architecture puis modélisation
-- Implémentation, de préférence modulaire et conteneurisée
-- Tests unitaires à la fin de chaque sprint
-- Orchestration et intégration
-- Sécurisation de la production (contrôles qualité, logs, métriques et comportements de reprise)
-- Reprise de la documentation, dépôt Git
+Je travaille dans l’IT depuis le début des années 90. J’ai commencé sur le terrain (développement, analyse, gestion de projet), puis j’ai évolué vers des fonctions business en ESN (ingénieur d’affaires, direction commerciale) et l’entrepreneuriat.
 
----
+Adepte du credo "utile / utilisé / utilisable", j'applique le fonctionnement suivant : partir d’un besoin réel, le rationaliser, puis construire une réponse adaptée, en mobilisant les bonnes compétences ou en réalisant une solution.
 
-### Formation
+En tant que dirigeant, j’ai été confronté à des processus internes longs, complexes et répétitifs (commercial, gestion, administratif).
 
-- Data Engineer (OpenClassrooms) — projets de conception, orchestration, qualité et valorisation des données
+De nombreuses tâches n’étaient pas mon cœur de métier, mais elles finissaient par prendre une place disproportionnée au détriment de l’essentiel : développer, manager et anticiper.
 
----
+Et quand on manque de temps ou d’informations consolidées, on finit par commettre des erreurs : arbitrages incomplets, retards, décisions prises avec une visibilité partielle.
 
-### Contact
+C’est notamment pour résoudre ces problèmes que je me suis formé au métier de Data Engineer chez OpenClassrooms (niveau 7 RNCP).
 
-<ul>
-  <li><a href="https://www.linkedin.com/in/patrick-arbessier/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-  <li><a href="mailto:portfolio@anogen.eu" target="_blank" rel="noopener noreferrer">Email</a></li>
-</ul>
+L’objectif était simple : acquérir et maîtriser les méthodes et pratiques qui permettent de remplacer une partie de ces tâches répétitives par des mécanismes fiables, mesurables et automatisables.
+
+Un "pipeline", c’est la chaîne qui transforme des données brutes en informations utiles ; "orchestrer", c’est faire tourner cette chaîne automatiquement, au bon moment, en implémentant des contrôles et des alertes en cas d’anomalie. Cette formation s’est concrétisée par 13 projets validés, dont plusieurs sont présentés ici.
+
+Prêt à m'intégrer dans des équipes projets ou à m'investir dans la résolution d'irritants, je peux intervenir en tant que salarié ou comme consultant : le cadre n’est pas un sujet, je m’adapte au contexte.
+
+Ce qui m’importe, c’est d’apporter des solutions concrètes, compréhensibles et efficaces, de documenter et de former pour garantir la continuité.

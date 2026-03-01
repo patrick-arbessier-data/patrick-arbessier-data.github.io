@@ -23,7 +23,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 ### Jekyll ###
 _site
 .jekyll-cache
@@ -33,3 +32,9 @@ _site
 
 ### Gemfile ###
 Gemfile.lock
+
+# Other files / directories
+/0_infos_projets/
+_tmp_all.css
+.vscode/
+Thumbs.db
