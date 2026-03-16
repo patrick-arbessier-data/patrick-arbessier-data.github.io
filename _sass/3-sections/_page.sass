@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// Pages “classiques” (Profil, Contact, etc.)
+// Pages “classiques” (Project, Profil, Contact, etc.)
 // Objectif : même largeur visuelle que les pages projets (.post-container)
 // -----------------------------------------------------------------------------
 
@@ -72,3 +72,40 @@
   // Évite un “gros vide” quand un titre est le premier élément du contenu
   h1:first-child, h2:first-child, h3:first-child, h4:first-child
     margin-top: 0
+
+  // ---------------------------------------------------------------------------
+  // AJOUT : style réutilisable pour les tableaux des pages de contenu / projets
+  // Usage attendu dans les fichiers .md :
+  // <table class="project-table"> ... </table>
+  // Objectif :
+  // - homogénéiser le rendu des tableaux
+  // - éviter les variations de style des tableaux Markdown natifs
+  // - garantir un rendu lisible dans les pages projets
+  // ---------------------------------------------------------------------------
+  .project-table
+    width: 100%
+    border-collapse: collapse
+    margin: 18px 0 24px
+    table-layout: fixed
+
+    th, td
+      border: 1px solid #ddd
+      padding: 10px 12px
+      text-align: left
+      vertical-align: top
+      line-height: 1.45
+      overflow-wrap: anywhere
+
+    th
+      font-weight: 700
+      background: #f7f7f7
+
+  // ---------------------------------------------------------------------------
+  // AJOUT : ajustement mobile pour conserver un tableau lisible sur petits écrans
+  // ---------------------------------------------------------------------------
+  @media (max-width: 768px)
+    .project-table
+      font-size: 14px
+
+      th, td
+        padding: 8px 10px

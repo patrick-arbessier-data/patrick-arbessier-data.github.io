@@ -79,18 +79,67 @@ Le pipeline route l’exécution selon les signaux détectés : simulation, modi
 
 ## Stack
 
-| Outil / composant | Rôle | Pourquoi |
-| --- | --- | --- |
-| Kestra | orchestration du pipeline | centraliser l’exécution, le suivi et les relances conditionnelles |
-| Python | extraction, transformation, calculs et simulation | souplesse de traitement et logique métier |
-| PostgreSQL | stockage des données métier, sécurité, opérations et vues BI | structurer les données et séparer les usages |
-| Soda | contrôles qualité | automatiser les vérifications sur tables et vues |
-| Google Maps API | contrôle et calcul des distances domicile-travail | fiabiliser les déclarations et enrichir les données |
-| MS Excel | source legacy RH et sport | intégrer les données salariés existantes au POC |
-| Google Forms / Google Sheets | collecte des déclarations d’activité | disposer d’une saisie simple et exploitable dans le POC |
-| CSV | fichiers intermédiaires de transformation | faciliter certains échanges et traitements de données |
-| Slack API / Webhook | notifications métier et alerting | informer rapidement sur les événements et les anomalies |
-| Power BI | restitution des indicateurs | analyser les coûts, l’éligibilité et les scénarios |
+<table class="project-table">
+  <thead>
+    <tr>
+      <th>Outil / composant</th>
+      <th>Rôle</th>
+      <th>Pourquoi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kestra</td>
+      <td>orchestration du pipeline</td>
+      <td>centraliser l’exécution, le suivi et les relances conditionnelles</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>extraction, transformation, calculs et simulation</td>
+      <td>souplesse de traitement et logique métier</td>
+    </tr>
+    <tr>
+      <td>PostgreSQL</td>
+      <td>stockage des données métier, sécurité, opérations et vues BI</td>
+      <td>structurer les données et séparer les usages</td>
+    </tr>
+    <tr>
+      <td>Soda</td>
+      <td>contrôles qualité</td>
+      <td>automatiser les vérifications sur tables et vues</td>
+    </tr>
+    <tr>
+      <td>Google Maps API</td>
+      <td>contrôle et calcul des distances domicile-travail</td>
+      <td>fiabiliser les déclarations et enrichir les données</td>
+    </tr>
+    <tr>
+      <td>MS Excel</td>
+      <td>source legacy RH et sport</td>
+      <td>intégrer les données salariés existantes au POC</td>
+    </tr>
+    <tr>
+      <td>Google Forms / Google Sheets</td>
+      <td>collecte des déclarations d’activité</td>
+      <td>disposer d’une saisie simple et exploitable dans le POC</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>fichiers intermédiaires de transformation</td>
+      <td>faciliter certains échanges et traitements de données</td>
+    </tr>
+    <tr>
+      <td>Slack API / Webhook</td>
+      <td>notifications métier et alerting</td>
+      <td>informer rapidement sur les événements et les anomalies</td>
+    </tr>
+    <tr>
+      <td>Power BI</td>
+      <td>restitution des indicateurs</td>
+      <td>analyser les coûts, l’éligibilité et les scénarios</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Mise en œuvre
 
