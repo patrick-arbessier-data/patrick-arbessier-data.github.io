@@ -31,12 +31,18 @@ Objectif :
 
 Les flux batch couvrent l’export et l’intégration des données historiques et métiers, tandis que les flux temps réel adressent les événements (IoT ou tickets) nécessitant un traitement rapide et fiable.
 
+### Approche structurante
+
+- Conservation du SI local comme référentiel
+- Séparation batch / temps réel
+- Continuité des identités via AD Connector plutôt que duplication d’annuaire
+
 ### Solution livrée
 
 La solution est structurée en deux livrables complémentaires :
 
 - une **architecture hybride cible** décrivant l’intégration on-premise / AWS, les zones du data lake, et les mécanismes de sécurité et d’identité
-- un **POC de streaming** démontrant un traitement temps réel de bout en bout sur un cas d’usage tickets
+- un **POC de streaming** démontrant un traitement quasi temps réel de bout en bout sur un cas d’usage tickets
 
 #### Architecture hybride
 
@@ -84,24 +90,26 @@ La solution est structurée en deux livrables complémentaires :
 
 ### Résultats & preuves
 
-- architecture cohérente et extensible
-- intégration batch + streaming
-- flux sécurisés et identités maîtrisées
-- estimation des coûts et leviers de contrôle
+- architecture hybride cible définie
+- intégration batch / temps réel modélisée
+- sécurité, identités et coûts intégrés à la conception
+- POC streaming exécuté de bout en bout
+- production de 100 tickets
+- sorties générées : enrichissement + 3 agrégations
 
 ### Compétences démontrées
 
-- Concevoir une architecture **hybride**
-- Mettre en place une chaîne **streaming**
-- Structurer un **data lake**
-- Traiter des flux avec **Spark**
+- Concevoir une architecture **hybride** on-premise / cloud
+- Modéliser des flux batch et temps réel
+- Mettre en place une chaîne **streaming** avec Redpanda et PySpark
+- Enrichir et agréger des flux avec **Spark**
 - Intégrer sécurité, identités et coûts dès la conception
 
 ### Valeur ajoutée
 
-- Transition cloud progressive
-- Vision claire des compromis techniques
-- Base solide pour industrialisation future
+- Préparer une transition cloud progressive sans remettre en cause le SI existant
+- Sécuriser dès la conception l’intégration entre on-premise, identités et flux de données
+- Valider par un POC la faisabilité d’un traitement quasi temps réel avant industrialisation
 
 ## Accès au repo
 
