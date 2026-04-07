@@ -96,7 +96,7 @@ Le pipeline route l’exécution selon les signaux détectés : simulation, modi
     <tr>
       <td>Python</td>
       <td>extraction, transformation, calculs et simulation</td>
-      <td>souplesse de traitement et logique métier</td>
+      <td>développer / modulariser les scripts</td>
     </tr>
     <tr>
       <td>PostgreSQL</td>
@@ -125,13 +125,13 @@ Le pipeline route l’exécution selon les signaux détectés : simulation, modi
     </tr>
     <tr>
       <td>CSV</td>
-      <td>fichiers intermédiaires de transformation</td>
-      <td>faciliter certains échanges et traitements de données</td>
+      <td>génération de déclarations d'activités simulées</td>
+      <td>préparer la typologie de simulations selon paramétrage</td>
     </tr>
     <tr>
       <td>Slack API / Webhook</td>
       <td>notifications métier et alerting</td>
-      <td>informer rapidement sur les événements et les anomalies</td>
+      <td>notifier immédiatement les événements et les anomalies</td>
     </tr>
     <tr>
       <td>Power BI</td>
@@ -177,16 +177,6 @@ Le POC démontre :
 ### Exemple de rapport Power BI
 
 {% include lightbox_image.html image="projects/proj-1/p12_exemples_rapport_bi.jpg" alt="Exemples rapport BI" %}
-
-## Compétences démontrées
-
-- Concevoir un pipeline data end-to-end orienté cas d’usage métier
-- Orchestrer des traitements conditionnels, traçables et rejouables
-- Structurer un modèle PostgreSQL exploitable pour le pilotage BI
-- Industrialiser des contrôles qualité sur les données et les vues de restitution
-- Intégrer et orchestrer des services externes dans une chaîne unique
-- Mettre en place une chaîne de monitoring, d'historisation et d'alerting
-- Traduire des règles métier d’éligibilité en logique de données et de contrôle
 
 ## Valeur ajoutée
 
